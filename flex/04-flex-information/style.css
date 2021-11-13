@@ -1,6 +1,23 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align:center; /**/
 }
+
+.title {
+  margin-bottom:32px; /**/
+}
+
+.directory {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap: 52px;
+}
+
+.plant {
+  max-width: 200px;
+}
+
 
 img {
   width: 100px;
