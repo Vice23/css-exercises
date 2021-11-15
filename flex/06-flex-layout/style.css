@@ -5,6 +5,58 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* creates column-style layout between the three main segments */
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+}
+
+/* header and footer styling */
+
+/* keeps header and footer left 
+vs. right content pushed to either sides */
+.header, .footer {
+  display:flex;
+  justify-content:space-between;
+  /* align-items: center; */
+  padding: 16px;
+}
+
+/* adds background colour; used to have a 'fixed' footer, but found it 
+asier to achieve with 'gap' fron justify-content: space between */
+.footer {
+  /* position:fixed;
+  bottom: 0;
+  width:100%; */
+  background-color: #eee;
+}
+
+/*  Removes bullets, adds some space (gap) between links, 
+and removes default padding and margin from the list format*/
+ul {
+  list-style: none;
+  display:flex;
+  padding:0;
+  margin:0px;
+  gap:16px;
+  
+}
+
+/* removes default link text styling (underline, blue colour */
+.header a, .footer a {
+  text-decoration:none;
+  color:rgb(78, 78, 78);
+}
+
+
+/*  centers the image, entry field, and buttons into a column-style layout*/
+.content {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  /* now main axis is a vertical value */
+  align-items: center; 
+  /* now cross axis is a horizontal value */
 }
 
 img {
@@ -16,6 +68,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding:8px 18px 8px 18px;
+  /* padding: top left bottom right */
 }
 
 input {
